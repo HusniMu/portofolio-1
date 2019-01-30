@@ -59,7 +59,7 @@ p {
 }
 
 #showcase h1 {
-    padding-top: 50%;
+    padding-top: 50vh;
     padding-bottom: 0;
 }
 
@@ -95,4 +95,47 @@ p {
 
 .card-content {
     padding: 1.5em;
+}
+
+/* section c */
+#section-c {
+    background: #fff;
+    color: #333;
+    padding: 2em;
+}
+
+/* section d */
+#section-d .box{
+    padding: 2em;
+    color: #fff;
+}
+
+#section-d .box:first-child {
+    background-color: steelblue;
+}
+
+/* footer */
+#main-footer {
+    padding: 2em;
+    background: #000;
+    color: #fff;
+    text-align: center;
+}
+
+#main-footer a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+/* media queries */
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, min-max(auto, 25em)) 1fr;
+    }
+
+    .content-wrap,
+    #section-b ul {
+        grid-column: 2/4;
+    }
 }
